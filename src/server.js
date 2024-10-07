@@ -1,19 +1,17 @@
 require('./config/pg_connection')
+require('dotenv').config()
 const express = require('express')
 var bodyParser = require('body-parser')
 const cors = require('cors')
-const app = express()
-const routes = require("./routes/user.routes")
-
+const app = express();
 app.use(
   cors({
-    origin: 'http://localhost:5173', // Replace with your Vue.js client's URL
+    origin: process.env.WEBCONSOLEURL, // Replace with your Vue.js client's URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed HTTP methods
     credentials: true // Allow cookies to be sent with requests
   })
 )
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-app.use('/user',routes)
-
+require("./routes/index")(app);
 module.exports = app

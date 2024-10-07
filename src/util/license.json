@@ -1,0 +1,79 @@
+{
+    "keypublishinfo": {
+      "max_day": 365,
+      "max_user": 100,
+      "substype": 1,
+      "custname": "QA",
+      "valid_until": 0,
+      "lic_key_type": 2,
+      "grace_period": 30,
+      "lic_createdon": 1521020793,
+      "lic_reg_date": 1597141421,
+      "lic_exp_date": 1728811283,
+      "seats_used": 88,
+      "pkg_name": "K7 Cyber Protect 360",
+      "lic_created_by": "admin",
+      "lic_act_email": "guru@k7computing.com",
+      "comments": "For Testing",
+      "last_contacted_on": 1714040303,
+      "industry_name": "dsds",
+      "hosting_model": 1,
+      "managed_by": 0,
+      "off_act_enabled": 1
+    },
+    "lstserverinfo": [
+      {
+        "server_name": "ESSQLSECSRVR",
+        "seats_allocated": 1,
+        "seats_used": 13,
+        "last_contacted_on": 1597143429,
+        "active": 1
+      },
+      {
+        "server_name": "APOLLOPRIDB",
+        "seats_allocated": 50,
+        "seats_used": 13,
+        "last_contacted_on": 1597222751,
+        "active": 0
+      },
+      {
+        "server_name": "DESKTOP-OTQO2PI",
+        "seats_allocated": 2,
+        "seats_used": 13,
+        "last_contacted_on": 0,
+        "active": 1
+      },
+      {
+        "server_name": "WIN-6U44N2DPCGP",
+        "seats_allocated": 8,
+        "seats_used": 13,
+        "last_contacted_on": 1642437340,
+        "active": 1
+      },
+      {
+        "server_name": "WIN10-32",
+        "seats_allocated": 4,
+        "seats_used": 13,
+        "last_contacted_on": 1630738169,
+        "active": 1
+      },
+      {
+        "server_name": "W2016QA1",
+        "seats_allocated": 2,
+        "seats_used": 13,
+        "last_contacted_on": 1631723591,
+        "active": 1
+      },
+      {
+        "server_name": "W2016QA1",
+        "seats_allocated": 50,
+        "seats_used": 10,
+        "last_contacted_on": 1714040303,
+        "active": 1
+      }
+    ],
+    "sts": 0,
+    "errcode": "",
+    "errdesc": ""
+  }
+  

@@ -1,5 +1,5 @@
 const pool = require('../config/pg_connection')
-
+const externalApi = require('../util/external.api')
 const createUser = async (request, response) => {
     const { name,role,email } = request.body.user
    await pool.query('INSERT INTO users (name, role, email) VALUES ($1, $2, $3)', [name, role, email], (error, results) => {
@@ -37,6 +37,7 @@ const createUser = async (request, response) => {
   }
 
   const getAllUsers = (request, response) =>{
+    // externalApi.postRequestAPI()
     pool.query('select * from users', (error, results) => {
       if (error) {
         throw error
@@ -44,7 +45,11 @@ const createUser = async (request, response) => {
       response.status(200).json(results.rows)
     })
   
+ 
   }
+
+
+
   module.exports = {
     createUser,
     updateUser,
